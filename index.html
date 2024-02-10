@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank-Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Zi2M1EZbY5vpeOueT4t3hpqVgKO5Ur8I1J/pWrd9n+EZewFO6sLByjP8h+qUCONBpES8VJezPSj4JoD1jvMHNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+<nav id="nav-menu">
+    <div class="containernav">
+        <div class="logo"><a href="#home">Shashank's Portfolio</a></div>
+        <div class="hamburger" onclick="toggleNavbar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-links">
+                <ul><a href="#home">Home</a></ul>
+                <ul><a href="#about">About Me</a></ul>
+                <ul><a href="#skills">Skills</a></ul>
+                <ul><a href="#projects">Projects</a></ul>
+                <ul><a href="#contact">Contact</a></ul>
+                <ul><a href="#" onclick="downloadResumeAndOpenDrive();">Resume</a></ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Home/About Me Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <h1>Hi👋 I'm Shashank Singh</h1>
+            <h2 id="role"> </h2>
+            <img src="img_4.avif" alt="Your Name">
+            </div>
+            <div class="social-icons">
+                <a href="mailto:shashank.psit057@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/shaku2202" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shashank-singh-8b5a471aa/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+    </section>
+ <!--about me section-->
+    <!-- Add this in your About Me section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About Me</h2>
+        
+        <!-- Two-column layout using flexbox -->
+        <div class="about-content">
+            <div class="about-image">
+                <img src="snapedit_1707409577961.png"  alt="Your Name">
+            </div>
+            <br>
+            <div class="about-text">
+                <p>Versatile Node backend developer with proficiency in the MERN stack,
+                     showcasing adeptness in solo and collaborative project development.
+                      Skilled in crafting scalable and efficient solutions, demonstrating a keen eye for detail.
+                       Proven ability to navigate complex coding challenges and contribute to impactful, high-quality 
+                       applications.</p>
+                    <section id="resume" class="resume-section">
+                        <div class="container">
+                            <a href="#" onclick="downloadResumeAndOpenDrive();">Download Resume</a>
+                        </div>
+                    </section>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+     <!--about me section ends-->
+
+     <!-- Tech Stack & Tools Section -->
+    <!-- Add this in your Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <h2>Technical Skills & Tools</h2>
+
+        <!-- Skills -->
+        <div class="skills">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-cogs"></i>
+                <p>RESTful APIs</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-envira"></i>
+                <p>MongoDB</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <p>MySQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <p>Redis</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-aws"></i>
+                <p>AWS</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-figma"></i>
+                <p>Figma</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-bootstrap"></i>
+                <p>Bootstrap</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-codepen"></i>
+                <p>CodePen</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <!-- Add more skill cards as needed -->
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="tracker_jet.png" alt="Project 1">
+                <div class="project-info">
+                    <h2>Tracker Jet</h2>
+                    <p>"The Tracker Jet App is a responsive study tracking website designed to assist students in managing their assignments effectively."</p>
+                    <div class="symbol">
+                        <i class="fab fa-html5" title="HTML"></i>
+                        <i class="fab fa-css3-alt" title="CSS"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="fab fa-node" title="Node.js"></i>
+                        <i class="fab fa-node-js" title="Express"></i>
+                        <i class="fab fa-creative-commons-nc-eu" title="MongoDB"></i>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://github.com/shaku2202/tracker-jet-app" target="_blank">GitHub</a>
+                        <a href="https://tracker-jet-app.vercel.app/" target="_blank">Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--project2-->
+            <div class="project-card">
+                <img src="Alcazar.png" alt="Project 1">
+                <div class="project-info">
+                    <h2>Alcazar</h2>
+                    <p>"Alcazar is a travel website that offers a seamless platform for exploring destinations, booking hotels and flights, and connecting with a vibrant travel community. Join us to discover the beauty of journeys and make lasting memories."</p>
+                    <div class="symbol">
+                        <i class="fab fa-html5" title="HTML"></i>
+                        <i class="fab fa-css3-alt" title="CSS"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="fab fa-creative-commons-nc-eu" title="MongoDB"></i>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://github.com/shaku2202/Alcazar_Travel_Website" target="_blank">GitHub</a>
+                        <a href="https://alcazartravel.netlify.app/" target="_blank">Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--project3-->
+            <div class="project-card">
+                <img src="Blog.png" alt="Project 1">
+                <div class="project-info">
+                    <h2>Your Daily Read</h2>
+                    <p>"Replicated a Figma design during Construct Week.
+                        Successfully cloned and implemented one page of the original website"</p>
+                    <div class="symbol">
+                        <i class="fab fa-html5" title="HTML"></i>
+                        <i class="fab fa-css3-alt" title="CSS"></i>
+                        <i class="fab fa-figma" title="Figma"></i>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://github.com/shaku2202/figma-design" target="_blank">GitHub</a>
+                        <a href="https://relaxed-biscochitos-e3d71f.netlify.app/" target="_blank">Live</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar structure for other projects -->
+        </div>
+    </section>
+
+    <!-- GitHub Statistics & Calendar Section -->
+    <section class="github-section">
+        <h2>Git Statics</h2>
+        <div class="graph">
+            <p><img  src="https://ghchart.rshah.org/shaku2202" alt="shaku2202's GitHub chart" title="shaku2202's GitHub chart"></p>
+        </div>
+        <div class="gitcontainer">
+            <!-- GitHub Stats -->
+            <div>
+                <p>&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=shaku2202&show_icons=true&locale=en" alt="shaku2202" style="height: 210px;"/></p>
+            </div>
+            <!-- Add GitHub Stats and Calendar components -->
+            <div>
+                <p><img src="https://github-readme-stats.vercel.app/api/top-langs?username=shaku2202&show_icons=true&locale=en&layout=compact" alt="shaku2202" style="height: 200px;" /></p>
+            </div>
+            <!-- GitHub Contribution Streak -->
+            <div>
+                <p><img  src="https://github-readme-streak-stats.herokuapp.com/?user=shaku2202&" alt="shaku2202" /></p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+
+            <div class="contact-card">
+                <!-- Contact Form Card -->
+                <div class="form">
+                    <h3 style="text-align: center; font-size: 25px; color:teal;">Message me</h3>
+                    <form action="https://getform.io/f/d27706aa-75ff-4884-b00a-aa25a5e13b4a" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <!-- Contact Information Card -->
+                <div class="content">
+                    <div class="info">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 7839150269</p>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Varanasi, India</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="mailto:shashank.psit057@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/shaku2202" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shashank-singh-8b5a471aa/" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--footer-->
+<a href="#home" class="back-to-top">
+    <i class="fas fa-home"></i>
+</a>
+<div class="footer">MADE &nbsp;BY &nbsp; SHASHANK</div>
+    <script>
+function toggleNavbar() {
+    var navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+document.querySelectorAll('.nav-links a').forEach(item => {
+    item.addEventListener('click', () => {
+        var navLinks = document.querySelector('.nav-links');
+        navLinks.classList.remove('show');
+    });
+});
+
+
+        function downloadResumeAndOpenDrive() {
+    // Download the PDF file
+    var pdfLink = document.createElement('a');
+    pdfLink.href = 'Shashank-Singh-Resume.pdf';
+    pdfLink.download = 'Shashank-Singh-Resume.pdf';
+    pdfLink.click();
+
+    // Open the Google Drive link in a new tab
+    window.open('https://drive.google.com/file/d/1ERqaxT4ZsuY9nvmZ2_1QcJ8FtHTRetup/view?usp=sharing', '_blank');
+}
+
+
+        function toggleNavbar() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
+
+    async function fetchGitHubStats(username) {
+        try {
+            const response = await fetch(`https://api.github.com/users/${username}`);
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('Error fetching GitHub statistics', error);
+            return null;
+        }
+    }
+
+    // Function to update the GitHub statistics section
+    async function updateGitHubStats(username) {
+        const githubStats = document.querySelector('.github-stats');
+
+        // Fetch GitHub statistics
+        const stats = await fetchGitHubStats(username);
+
+        // Display GitHub statistics
+        if (stats) {
+            githubStats.innerHTML = `
+                <h2>GitHub Statistics</h2>
+                <p>Total Repositories: ${stats.public_repos}</p>
+                <p>Followers: ${stats.followers}</p>
+                <p>Following: ${stats.following}</p>
+            `;
+        }
+    }
+    
+    // Call the function with your GitHub username
+    
+    updateGitHubStats('shaku2202');
+
+    const roles = ["Backend Developer", "Full Stack Developer", "Frontend Developer"];
+const roleElement = document.getElementById("role");
+
+let currentIndex = 0;
+let currentText = '';
+let letterIndex = 0;
+
+function typeRole() {
+    if (letterIndex < roles[currentIndex].length) {
+        currentText += roles[currentIndex].charAt(letterIndex);
+        roleElement.textContent = currentText;
+        letterIndex++;
+        setTimeout(typeRole, 100); // Adjust typing speed as needed
+    } else {
+        setTimeout(eraseRole, 1000); // Wait before erasing text
+    }
+}
+
+function eraseRole() {
+    if (currentText.length > 0) {
+        currentText = currentText.slice(0, -1);
+        roleElement.textContent = currentText;
+        setTimeout(eraseRole, 50); // Adjust erasing speed as needed
+    } else {
+        currentIndex = (currentIndex + 1) % roles.length;
+        letterIndex = 0;
+        setTimeout(typeRole, 500); // Wait before typing new role
+    }
+}
+
+// Start typing animation
+setTimeout(typeRole, 1000); // Wait before starting animation
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,579 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+        background-color: rgba(1, 44, 44, 0.200);
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        
+    }
+    
+    /* Navbar styles */
+.containernav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-menu {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.logo a:hover,
+.nav-links a:hover {
+    border-bottom: 2px solid #fff; /* Adjust the color and thickness as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    gap: 25px;
+    
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(1, 44, 44);
+        z-index: 1;
+    }
+
+    .nav-links.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul {
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+    /* Home Section styles */
+    .home-section {
+        text-align: center;
+        margin-top:40px;
+        background-size: cover;
+        padding: 130px 0;
+        flex-wrap: wrap;
+        background-image: url(img_3.jpg);
+    }
+    
+    .home-section img {
+        border-radius: 50%;
+        width: 250px;
+        margin-top:30px;
+        height: 250px;
+    }
+    h1{
+        color:rgb(248, 247, 247);
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .icon{
+        font-size:30px;
+        margin: 20px;
+        color:rgb(219, 219, 216);
+        text-align: center;
+    }
+    .icon:hover{
+        transform: scale(1.05);
+    }
+     .home-section .container h2 {
+        overflow: hidden; /* Hide the overflow to create typing effect */
+        border-right: 2px solid #757474; /* Simulate the cursor */
+        white-space: nowrap; /* Prevent line break */
+        margin: 0;
+        color:rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: bolder;
+        animation: typing 4s, blink-caret 0.75s infinite;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+/*about*/
+/* Add this CSS to your styles.css or in the <style> tag within the head of your HTML */
+.about-section {
+    padding: 50px 20px; /* Adjusted padding */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: rgb(38, 70, 119);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column; /* Updated to a single column layout for small screens */
+    align-items: center;
+}
+
+.about-image img {
+    max-width: 50%;
+    border-radius: 6%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 20px; /* Adjusted margin for smaller screens */
+}
+
+.about-section h2 {
+    color: rgb(2, 2, 2);
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 20px; /* Adjusted margin for smaller screens */
+    text-align: center; /* Centered on small screens */
+}
+
+.about-text p {
+    color: white;
+    line-height: 1.5;
+    font-size: 20px;
+    text-align: center; /* Centered on small screens */
+    
+}
+
+/* Media query to stack the content on smaller screens */
+@media only screen and (max-width: 768px) {
+    .about-content {
+        align-items: center;
+    }
+}
+
+/* Media query to stack the content on smaller screens */
+
+
+/*skills*/
+/* Add this CSS to your styles.css or in the <style> tag within the head of your HTML */
+.skills-section {
+    padding: 50px 0;
+    background-color: rgb(125, 131, 118);
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.skills,
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-card,
+.tool-card {
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    width:100px;
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(15% - 30px);
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    background-color: rgb(166, 168, 23);
+}
+
+i {
+    font-size: 50px;
+    color: rgb(28, 218, 21); /* Adjust the color as needed */
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Media query to adjust layout on smaller screens */
+@media only screen and (max-width: 768px) {
+    .skills,
+    .tools {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+    /* Projects Section styles */
+    .projects-section {
+        padding: 50px 0;
+        background-color: rgb(38, 70, 119);
+    }
+    .project-card {
+        display: flex;
+       
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: whitesmoke;   
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
+    }
+    .project-card img {
+        width: 50%; /* Adjust the width as needed */
+        height: auto;
+        padding:20px;
+        background-color: rgba(203, 201, 201, 0.421);
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .project-card img:hover {
+        transform: scale(1.1);
+    }
+    .symbol{
+        font-size:40px;
+        margin: 40px;
+        color:rgb(1, 44, 44);;
+        text-align: center;
+    }
+    .symbol i{
+        margin-right: 15px;
+    }
+    .project-info {
+        flex: 1;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 1.5;
+    }
+
+    .project-card h2,
+    .project-card p {
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .buttons a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: rgb(28, 218, 21);
+        color: white;
+        border-radius: 5px;
+    }
+    .buttons a:hover {
+        transform: scale(1.1);
+    }
+    @media only screen and (max-width: 600px) {
+        .project-card {
+            padding: 10px; /* Adjust padding for smaller screens */
+        }
+        .project-card img{
+            width:90%
+        }
+    }
+    /* GitHub Section styles */
+    .github-section {
+        padding: 25px 0;
+        background-color: rgb(38, 70, 119);
+    }
+    .gitcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        padding: 2%;
+        
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+        
+    }
+    .graph{
+       padding-left:10%;
+       padding-right: 10%;
+       padding:2%;
+        align-items: center;
+       
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.288);
+    }
+    @media screen and (min-width: 768px) {
+        .gitcontainer > div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    /* Contact Section styles */
+
+    .contact-section {
+        padding: 30px 0;
+    
+        background-color:rgb(125, 131, 118);
+    }
+    
+    h2 {
+        text-align: center;
+        color: #020202;
+    }
+    
+    .contact-card {
+        display: flex;
+        align-items: center;
+        background-color: whitesmoke;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        justify-content: space-between;
+        width:80%;
+        flex-wrap: wrap;
+        margin: 30px;
+    }
+    
+    .content {
+        padding: 20px;
+    }
+    
+    .info {
+        
+        align-items: center;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .info:hover{
+        transform: scale(1.1);
+    }
+    .info i {
+        font-size: 24px;
+        color: rgb(28, 218, 21);
+        margin-right: 10px;
+    }
+    
+    .info p {
+        color:rgb(28, 218, 21);
+    }
+    
+    .form {
+        flex: 1;
+        padding: 20px;
+        margin: 20px;
+        
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    label {
+        font-weight: bold;
+        margin-bottom: 8px;
+        color:rgb(28, 218, 21);
+    }
+    
+    input,
+    textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        
+    }
+    
+    button {
+        padding: 10px;
+        background-color: rgb(28, 218, 21);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgb(82, 82, 46);
+    }
+    
+    .social-icons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .icon {
+        font-size: 20px;
+        color: rgb(243, 243, 241);
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    
+    .icon:hover {
+        color: rgb(1, 44, 44);
+    }
+    @media only screen and (max-width: 600px) {
+        .contact-card {
+            margin: 10px 0;
+            
+        }
+    
+        .content,
+        .form {
+            padding: 10px;
+        }
+    
+        .info,
+        .form {
+            margin: 10px 0;
+        }
+    
+        .social-icons {
+            margin-top: 15px;
+        }
+    }
+    
+    /* Resume Section styles */
+    .resume-section {
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .resume-section a {
+        display: inline-block;
+        padding: 15px 30px;
+        text-decoration: none;
+        background-color: rgb(28, 218, 21);
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .footer{
+        text-align: center;
+        padding: 10px;
+        background-color:rgb(38, 70, 119);
+        color:white;
+        font-family: bolder;
+        letter-spacing: 5px;
+    }
+    
+    
+   
+    /* Responsive styles */
+    @media only screen and (max-width: 768px) {
+        .home-section img {
+            width: 150px; /* Adjust the width for smaller screens */
+            height: 150px; /* Adjust the height for smaller screens */
+        }
+    
+        h1 {
+            font-size: 24px; /* Adjust the font size for smaller screens */
+        }
+    
+        .icon {
+            font-size: 24px; /* Adjust the font size for smaller screens */
+            margin: 10px;
+        }
+    
+        .home-section .container h2 {
+            font-size: 18px; /* Adjust the font size for smaller screens */
+        }
+        .footer {
+            padding: 10px 20px; /* Adjust padding for smaller screens */
+            font-size: 14px; /* Adjust font size for smaller screens */
+            letter-spacing: 2px; /* Adjust letter spacing for smaller screens */
+        }
+    
+    }
+    
