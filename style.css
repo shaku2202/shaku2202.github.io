@@ -406,7 +406,7 @@ p {
     
     h2 {
         text-align: center;
-        color: #020202;
+        color: #fcfafa;
     }
     
     .contact-card {
@@ -462,7 +462,7 @@ p {
     label {
         font-weight: bold;
         margin-bottom: 8px;
-        color:rgb(28, 218, 21);
+        color:rgb(38, 70, 119);
     }
     
     input,
@@ -476,7 +476,7 @@ p {
     
     button {
         padding: 10px;
-        background-color: rgb(28, 218, 21);
+        background-color: rgb(38, 70, 119);
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -534,7 +534,7 @@ p {
         display: inline-block;
         padding: 15px 30px;
         text-decoration: none;
-        background-color: rgb(28, 218, 21);
+        background-color: rgb(0, 1, 5);
         color: white;
         border-radius: 5px;
         font-weight: bold;
