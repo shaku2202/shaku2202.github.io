@@ -261,7 +261,7 @@ h2 {
 
 i {
     font-size: 50px;
-    color: rgb(28, 218, 21); /* Adjust the color as needed */
+    color: rgb(38, 70, 119); /* Adjust the color as needed */
     margin-bottom: 10px;
     transition: color 0.3s ease-in-out;
 }
@@ -340,7 +340,7 @@ p {
         margin: 10px;
         padding: 10px 20px;
         text-decoration: none;
-        background-color: rgb(28, 218, 21);
+        background-color: rgb(38, 70, 119);
         color: white;
         border-radius: 5px;
     }
@@ -438,12 +438,12 @@ p {
     }
     .info i {
         font-size: 24px;
-        color: rgb(28, 218, 21);
+        color: rgb(38, 70, 119);
         margin-right: 10px;
     }
     
     .info p {
-        color:rgb(28, 218, 21);
+        color:rgb(38, 70, 119);
     }
     
     .form {
