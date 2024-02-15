@@ -347,7 +347,7 @@ p {
     .buttons a:hover {
         transform: scale(1.1);
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 1024px) {
         .project-card {
             padding: 10px; /* Adjust padding for smaller screens */
         }
